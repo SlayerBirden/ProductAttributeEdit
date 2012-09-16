@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SlayerBirden_ProductAttribute>
+            <active>true</active>
+            <codePool>community</codePool>
+        </SlayerBirden_ProductAttribute>
+    </modules>
+</config>

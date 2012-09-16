@@ -48,5 +48,15 @@
                 </sb_productattribute>
             </updates>
         </layout>
+        <events>
+            <controller_action_predispatch_adminhtml_catalog_product_edit>
+                <observers>
+                    <sb_productattribute>
+                        <class>sb_productattribute/observer</class>
+                        <method>assignTab</method>
+                    </sb_productattribute>
+                </observers>
+            </controller_action_predispatch_adminhtml_catalog_product_edit>
+        </events>
     </adminhtml>
 </config>
