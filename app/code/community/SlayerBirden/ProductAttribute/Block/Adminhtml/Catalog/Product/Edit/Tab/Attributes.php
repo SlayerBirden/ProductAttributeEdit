@@ -3,8 +3,11 @@ class SlayerBirden_ProductAttribute_Block_Adminhtml_Catalog_Product_Edit_Tab_Att
 {
     protected function _getAdditionalElementHtml($element)
     {
-        if ($element->getType() == 'select' || $element->getType() == 'multiselect') {
-            // logic here
+        $html = '';
+        if ($element->getEntityAttribute()->getIsUserDefined() &&
+            ($element->getType() == 'select' || $element->getType() == 'multiselect')) {
+            $html = '<button type="button" class="scalable add" onclick="addOneOption('.$element->getEntityAttribute()->getId().', this);return false;"><span><span>Add an option</span></span></button>';
         }
+        return $html;
     }
 }
