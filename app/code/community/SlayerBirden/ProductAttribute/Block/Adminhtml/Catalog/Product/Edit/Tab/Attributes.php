@@ -6,7 +6,7 @@ class SlayerBirden_ProductAttribute_Block_Adminhtml_Catalog_Product_Edit_Tab_Att
         $html = '';
         if ($element->getEntityAttribute()->getIsUserDefined() &&
             ($element->getType() == 'select' || $element->getType() == 'multiselect')) {
-            $html = '<button type="button" class="scalable add" onclick="addOneOption('.$element->getEntityAttribute()->getId().', this);return false;"><span><span>Add an option</span></span></button>';
+            $html = '<button type="button" class="scalable add" onclick="om.addOneOption(\''.$element->getEntityAttribute()->getAttributeCode().'\', this);return false;"><span><span>Add an option</span></span></button>';
         }
         return $html;
     }

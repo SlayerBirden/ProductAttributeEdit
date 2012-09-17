@@ -1,0 +1,7 @@
+<?php /** @var $this Mage_Core_Block_Template */?>
+<script type="text/javascript">
+    var optionHtml = '<tr><td>&nbsp;</td><td class="value"><input type="text" class="input-text" name="attr_new_option[#{attrId}][]" style="width:200px !important;" />' +
+            '<button onclick="om.sendOption(this);return false;" class="button" alt="#{attrId}" style="margin-left: 10px;"><span><span><?php echo $this->__('Add')?></span></span></button>' +
+            '<button onclick="om.removeOption(this);return false;" class="button" style="margin-left: 10px;"><span><span><?php echo $this->__('Cancel')?></span></span></button></td></tr>';
+    var om = new OptionManager('<?php echo Mage::helper('adminhtml')->getUrl('adminhtml/productattribute/save')?>', optionHtml);
+</script>

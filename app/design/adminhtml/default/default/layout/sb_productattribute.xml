@@ -4,10 +4,16 @@
         <reference name="head">
             <action method="addJs"><script>productattribute/func.js</script></action>
         </reference>
+        <reference name="js">
+            <block type="core/template" template="productattribute.phtml"/>
+        </reference>
     </adminhtml_catalog_product_new>
     <adminhtml_catalog_product_edit>
         <reference name="head">
             <action method="addJs"><script>productattribute/func.js</script></action>
+        </reference>
+        <reference name="js">
+            <block type="core/template" template="productattribute.phtml"/>
         </reference>
     </adminhtml_catalog_product_edit>
 </layout>
