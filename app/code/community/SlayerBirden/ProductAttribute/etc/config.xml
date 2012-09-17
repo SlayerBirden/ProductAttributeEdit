@@ -57,6 +57,14 @@
                     </sb_productattribute>
                 </observers>
             </controller_action_predispatch_adminhtml_catalog_product_edit>
+            <controller_action_predispatch_adminhtml_catalog_product_new>
+                <observers>
+                    <sb_productattribute>
+                        <class>sb_productattribute/observer</class>
+                        <method>assignTab</method>
+                    </sb_productattribute>
+                </observers>
+            </controller_action_predispatch_adminhtml_catalog_product_new>
         </events>
     </adminhtml>
     <admin>
